@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Form</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Swap</h1>
+        <form id="swap-form">
+            <div class="form-group">
+                <label for="input-amount">Amount to send</label>
+                <div class="input-group">
+                    <input id="input-amount" type="number" step="0.01" placeholder="0.00" required />
+                    <select id="input-currency" required>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="output-amount">Amount to receive</label>
+                <div class="input-group">
+                    <input id="output-amount" type="number" step="0.01" placeholder="0.00" disabled />
+                    <select id="output-currency" required>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">CONFIRM SWAP</button>
+            <p id="error-message"></p>
+        </form>
+        <!-- New container for displaying the result -->
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
